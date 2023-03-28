@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Green Living Exchange</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="68"
+            width="68"
+            alt="Green Living Exchange Logo"
+          />
+          <h1>Green Living Exchange</h1>
+        </div>
+        <button class="btn btn-large something-btn shareBtn btn-open">
+          Share something
+        </button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share something on sustainability..." />
+        <span style="color: #4b6b4e">200</span>
+        <input type="text" placeholder="City in which Located" />
+        <select>
+          <option value="">Choose category:</option>
+          <option value="reduce">Reduce</option>
+          <option value="reuse">Reuse</option>
+          <option value="recycle">Recycle</option>
+          <option value="Compost">Compost</option>
+          <option value="Living sustainably">Living sustainably</option>
+          <option value="stories">Stories</option>
+          <option value="challenges">Challenges</option>
+          <option value="news">News</option>
+        </select>
+        <button class="btn btn-large" style="color: #ece0c8">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #4b6b4e"
+              >
+                Reduce
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #4b6b4e"
+              >
+                Recycle
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="posts-list">
+            <li class="post">
+              <p>
+                Use a reusable bottle/cup for beverages on-the-go
+                <span class="location">(Shrewsbury)</span>
+              </p>
+              <span class="tag" style="background-color: #4b6b4e">reduce</span>
+              <div class="vote-buttons">
+                <button>😁<strong>24</strong></button>
+                <button>🌲 <strong>9</strong></button>
+                <button>👎 <strong>4</strong></button>
+              </div>
+            </li>
+            <li class="post">
+              <p>
+                Use old plastic bags, soda bottles, and milk jugs to store food
+                <span class="location">(London)</span>
+              </p>
+              <span class="tag" style="background-color: #4b6b4e">reuse</span>
+              <div class="vote-buttons">
+                <button>😁 <strong>4</strong></button>
+                <button>🌲 <strong>5</strong></button>
+                <button>👎 <strong>30</strong></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
